@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Forms</title>
+  </head>
+  <body>
+      <header>
+        <img class="logo" src="firefox-logo.jpg" width="30" height="30"> Пример
+      </header>
+      <main>
+              <fieldset>
+            <form enctype="multipart/form-data" action="https://echo.htmlacademy.ru/courses" method="get">
+                <h1>Пример формы регистрации сайта</h1>
+                <label>Логин:<br>
+                <input type="text" required name="login">
+                </label>
+                <br>
+                <label>
+                    Пароль:<br>
+                    <input type="password" required name="password">
+                </label>
+                <br>
+                <label> URL-адресс сайта:
+                <br>
+                    <input type="url" required name="url" placeholder="http://"></label>
+                <br>
+                <label> Название сайта:
+                    <br>
+                    <input type="text" required name="net">
+                </label>
+                <br>
+                <label> Описание сайта:
+                    <br>
+                    <textarea rows="10" cols="75"></textarea>
+                </label>
+                <br>
+                <label>
+                    Тема сайта:
+                    <select name="theme">
+                        <option value="not" selected>Тема не выбрана</option>
+                        <option value="yes">Тема выбрана</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Баннер 88х31:
+                    <br>
+                    <fieldset class="gray">
+                        <input type="file" name="banner" value="Обзор"></fieldset>
+                </label>
+                <br>
+                <input class="boldblue" type="reset" value="Очистить">
+                    <input class="boldblue" type="submit" value="Отправить">
+            </form>
+          </fieldset>
+      </main>
+      <footer></footer>
+  </body>
+</html>
